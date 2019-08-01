@@ -25,66 +25,66 @@ itzy-micro-service:
   url: ${ITZY_MICRO_SERVICE_URL:http://${itzy-micro-service.hosts.api-gateway}:${itzy-micro-service.ports.api-gateway}}
 
 # 微服务公共配置
-#sixi-micro-service-security:
+#itzy-micro-service-security:
 #  browser:
 #    loginPage: ${itzy-micro-service-common.oauth.loginPage}
 #    qyWechatRedirectUri: ${itzy-micro-service-common.oauth.url}
 
 # 微服务第三方服务配置
-#sixi-micro-service-third:
+#itzy-micro-service-third:
 #  wechat:
-#    app-id: ${ENV_SIXI_MICRO_SERVICE_THIRD_WECHAT_APP_ID:${SIXI_MICRO_SERVICE_THIRD_WECHAT_APP_ID}}
-#    secret: ${ENV_SIXI_MICRO_SERVICE_THIRD_WECHAT_SECRET:${SIXI_MICRO_SERVICE_THIRD_WECHAT_SECRET}}
-#    token: ${ENV_SIXI_MICRO_SERVICE_THIRD_WECHAT_TOKEN:${SIXI_MICRO_SERVICE_THIRD_WECHAT_TOKEN}}
-#    encoding-aes-key: ${ENV_SIXI_MICRO_SERVICE_THIRD_WECHAT_ENCODING_AES_KEY:${SIXI_MICRO_SERVICE_THIRD_WECHAT_ENCODING_AES_KEY}}
+#    app-id: ${ENV_itzy_MICRO_SERVICE_THIRD_WECHAT_APP_ID:${itzy_MICRO_SERVICE_THIRD_WECHAT_APP_ID}}
+#    secret: ${ENV_itzy_MICRO_SERVICE_THIRD_WECHAT_SECRET:${itzy_MICRO_SERVICE_THIRD_WECHAT_SECRET}}
+#    token: ${ENV_itzy_MICRO_SERVICE_THIRD_WECHAT_TOKEN:${itzy_MICRO_SERVICE_THIRD_WECHAT_TOKEN}}
+#    encoding-aes-key: ${ENV_itzy_MICRO_SERVICE_THIRD_WECHAT_ENCODING_AES_KEY:${itzy_MICRO_SERVICE_THIRD_WECHAT_ENCODING_AES_KEY}}
 #  qywechat:
-#    corp-id: ${ENV_SIXI_MICRO_SERVICE_THIRD_QYWECHAT_CORP_ID:${SIXI_MICRO_SERVICE_THIRD_QYWECHAT_CORP_ID}}
-#    agent-id: ${ENV_SIXI_MICRO_SERVICE_THIRD_QYWECHAT_AGENT_ID:${SIXI_MICRO_SERVICE_THIRD_QYWECHAT_AGENT_ID}}
-#    corp-secret: ${ENV_SIXI_MICRO_SERVICE_THIRD_QYWECHAT_CORP_SECRET:${SIXI_MICRO_SERVICE_THIRD_QYWECHAT_CORP_SECRET}}
-#    token: ${ENV_SIXI_MICRO_SERVICE_THIRD_QYWECHAT_TOKEN:${SIXI_MICRO_SERVICE_THIRD_QYWECHAT_TOKEN}}
-#    encoding-aes-key: ${ENV_SIXI_MICRO_SERVICE_THIRD_QYWECHAT_ENCODING_AES_KEY:${SIXI_MICRO_SERVICE_THIRD_QYWECHAT_ENCODING_AES_KEY}}
+#    corp-id: ${ENV_itzy_MICRO_SERVICE_THIRD_QYWECHAT_CORP_ID:${itzy_MICRO_SERVICE_THIRD_QYWECHAT_CORP_ID}}
+#    agent-id: ${ENV_itzy_MICRO_SERVICE_THIRD_QYWECHAT_AGENT_ID:${itzy_MICRO_SERVICE_THIRD_QYWECHAT_AGENT_ID}}
+#    corp-secret: ${ENV_itzy_MICRO_SERVICE_THIRD_QYWECHAT_CORP_SECRET:${itzy_MICRO_SERVICE_THIRD_QYWECHAT_CORP_SECRET}}
+#    token: ${ENV_itzy_MICRO_SERVICE_THIRD_QYWECHAT_TOKEN:${itzy_MICRO_SERVICE_THIRD_QYWECHAT_TOKEN}}
+#    encoding-aes-key: ${ENV_itzy_MICRO_SERVICE_THIRD_QYWECHAT_ENCODING_AES_KEY:${itzy_MICRO_SERVICE_THIRD_QYWECHAT_ENCODING_AES_KEY}}
 #  qywechatmail:
-#    corp-id: ${ENV_SIXI_MICRO_SERVICE_THIRD_QYWECHATMAIL_CORP_ID:${SIXI_MICRO_SERVICE_THIRD_QYWECHATMAIL_CORP_ID}}
-#    agent-id: ${ENV_SIXI_MICRO_SERVICE_THIRD_QYWECHATMAIL_AGENT_ID:${SIXI_MICRO_SERVICE_THIRD_QYWECHATMAIL_AGENT_ID}}
-#    corp-secret: ${ENV_SIXI_MICRO_SERVICE_THIRD_QYWECHATMAIL_CORP_SECRET:${SIXI_MICRO_SERVICE_THIRD_QYWECHATMAIL_CORP_SECRET}}
-#    token: ${ENV_SIXI_MICRO_SERVICE_THIRD_QYWECHATMAIL_TOKEN:${SIXI_MICRO_SERVICE_THIRD_QYWECHATMAIL_TOKEN}}
-#    encoding-aes-key: ${ENV_SIXI_MICRO_SERVICE_THIRD_QYWECHATMAIL_ENCODING_AES_KEY:${SIXI_MICRO_SERVICE_THIRD_QYWECHATMAIL_ENCODING_AES_KEY}}
+#    corp-id: ${ENV_itzy_MICRO_SERVICE_THIRD_QYWECHATMAIL_CORP_ID:${itzy_MICRO_SERVICE_THIRD_QYWECHATMAIL_CORP_ID}}
+#    agent-id: ${ENV_itzy_MICRO_SERVICE_THIRD_QYWECHATMAIL_AGENT_ID:${itzy_MICRO_SERVICE_THIRD_QYWECHATMAIL_AGENT_ID}}
+#    corp-secret: ${ENV_itzy_MICRO_SERVICE_THIRD_QYWECHATMAIL_CORP_SECRET:${itzy_MICRO_SERVICE_THIRD_QYWECHATMAIL_CORP_SECRET}}
+#    token: ${ENV_itzy_MICRO_SERVICE_THIRD_QYWECHATMAIL_TOKEN:${itzy_MICRO_SERVICE_THIRD_QYWECHATMAIL_TOKEN}}
+#    encoding-aes-key: ${ENV_itzy_MICRO_SERVICE_THIRD_QYWECHATMAIL_ENCODING_AES_KEY:${itzy_MICRO_SERVICE_THIRD_QYWECHATMAIL_ENCODING_AES_KEY}}
 #  alipay:
-#    app-id: ${ENV_SIXI_MICRO_SERVICE_THIRD_ALIPAY_APP_ID:${SIXI_MICRO_SERVICE_THIRD_ALIPAY_APP_ID}}
-#    private-key: ${ENV_SIXI_MICRO_SERVICE_THIRD_ALIPAY_PRIVATE_KEY:${SIXI_MICRO_SERVICE_THIRD_ALIPAY_PRIVATE_KEY}}
-#    ali_public-key: ${ENV_SIXI_MICRO_SERVICE_THIRD_ALIPAY_ALIPAY_PUBLIC_KEY:${SIXI_MICRO_SERVICE_THIRD_ALIPAY_ALIPAY_PUBLIC_KEY}}
-#    alipayUrl: ${ENV_SIXI_MICRO_SERVICE_THIRD_ALIPAY_ALIPAY_URL:${SIXI_MICRO_SERVICE_THIRD_ALIPAY_ALIPAY_URL}}
-#    callbackUri: ${ENV_SIXI_MICRO_SERVICE_THIRD_ALIPAY_CALLBACK_URL:${SIXI_MICRO_SERVICE_THIRD_ALIPAY_CALLBACK_URL}}
-#    scop: ${ENV_SIXI_MICRO_SERVICE_THIRD_ALIPAY_SCOP:${SIXI_MICRO_SERVICE_THIRD_ALIPAY_SCOP}}
+#    app-id: ${ENV_itzy_MICRO_SERVICE_THIRD_ALIPAY_APP_ID:${itzy_MICRO_SERVICE_THIRD_ALIPAY_APP_ID}}
+#    private-key: ${ENV_itzy_MICRO_SERVICE_THIRD_ALIPAY_PRIVATE_KEY:${itzy_MICRO_SERVICE_THIRD_ALIPAY_PRIVATE_KEY}}
+#    ali_public-key: ${ENV_itzy_MICRO_SERVICE_THIRD_ALIPAY_ALIPAY_PUBLIC_KEY:${itzy_MICRO_SERVICE_THIRD_ALIPAY_ALIPAY_PUBLIC_KEY}}
+#    alipayUrl: ${ENV_itzy_MICRO_SERVICE_THIRD_ALIPAY_ALIPAY_URL:${itzy_MICRO_SERVICE_THIRD_ALIPAY_ALIPAY_URL}}
+#    callbackUri: ${ENV_itzy_MICRO_SERVICE_THIRD_ALIPAY_CALLBACK_URL:${itzy_MICRO_SERVICE_THIRD_ALIPAY_CALLBACK_URL}}
+#    scop: ${ENV_itzy_MICRO_SERVICE_THIRD_ALIPAY_SCOP:${itzy_MICRO_SERVICE_THIRD_ALIPAY_SCOP}}
 # 微服务公共配置
-#sixi-micro-service-common:
+#itzy-micro-service-common:
 #  web-mvc-configurer:
 #    enabled: true
 #  redis:
-#    fast-json-serializer: ${SIXI_MICRO_SERVICE_COMMON_REDIS_FAST_JSON_SERIALIZER:true}
+#    fast-json-serializer: ${itzy_MICRO_SERVICE_COMMON_REDIS_FAST_JSON_SERIALIZER:true}
 #  feign:
-#    debug: ${SIXI_MICRO_SERVICE_COMMON_FEIGN_DEBUG:false}
+#    debug: ${itzy_MICRO_SERVICE_COMMON_FEIGN_DEBUG:false}
 #    proxy:
-#      enabled: ${SIXI_MICRO_SERVICE_COMMON_FEIGN_PROXY_ENABLED:true}
-#      header: ${SIXI_MICRO_SERVICE_COMMON_FEIGN_PROXY_HEADER:Cookie,Authorization}
+#      enabled: ${itzy_MICRO_SERVICE_COMMON_FEIGN_PROXY_ENABLED:true}
+#      header: ${itzy_MICRO_SERVICE_COMMON_FEIGN_PROXY_HEADER:Cookie,Authorization}
 #  session:
 #    create:
-#      policy: ${SIXI_MICRO_SERVICE_COMMON_SESSION_CREATION_POLICY:STATELESS}
+#      policy: ${itzy_MICRO_SERVICE_COMMON_SESSION_CREATION_POLICY:STATELESS}
 #  message:
 #    no-login: "用户未登录!"
 #    no-permission: "您没有权限访问此接口!"
 #  open:
-#    url: 'https://test.open.sixi.com/api'
+#    url: 'https://test.open.itzy.com/api'
 #  tokenmanager:
-#    url: 'https://api.sixi.com/common-tokenmanager-service'
+#    url: 'https://api.itzy.com/common-tokenmanager-service'
 #  oauth:
-#    url: 'https://test-oauth.cloud.sixi.com'
+#    url: 'https://test-oauth.cloud.itzy.com'
 #    #旧版oauth
 #    loginPage: '/login.html'
 #    #新版oauth
 #    loginPages: '/logins.html'
 #  logging:
-#    routing-key: ${SIXI_MICRO_SERVICE_COMMON_LOGGING_ROUTING_KEY:logs}
+#    routing-key: ${itzy_MICRO_SERVICE_COMMON_LOGGING_ROUTING_KEY:logs}
 
 # 默认端口配置
 server.port: ${ENV_PORT:${PORT:0}}
@@ -158,7 +158,7 @@ spring:
   # 默认的数据库配置
   datasource:
 #    name: ${ENV_DB_NAME:${DB_NAME:sys}}
-#    host: ${ENV_DB_HOST:${DB_HOST:${sixi-micro-service.local}}}
+#    host: ${ENV_DB_HOST:${DB_HOST:${itzy-micro-service.local}}}
 #    #type: org.apache.tomcat.jdbc.pool.DataSource
 #    driver-class-name: com.mysql.cj.jdbc.Driver
 #    url: ${ENV_DB_URL:${DB_URL:jdbc:mysql://${spring.datasource.host}/${spring.datasource.name}?serverTimezone=Asia%2FShanghai&characterEncoding=utf8&allowMultiQueries=true&useSSL=false}}
@@ -172,12 +172,12 @@ spring:
 #    # 默认的Mongodb服务器
 #    mongodb:
 #      database: ${ENV_MONGODB_NAME:${MONGODB_NAME:test}}
-#      host: ${ENV_MONGODB_HOST:${MONGODB_HOST:${sixi-micro-service.local}}}
+#      host: ${ENV_MONGODB_HOST:${MONGODB_HOST:${itzy-micro-service.local}}}
 #      port: ${ENV_MONGODB_PORT:${MONGODB_PORT:27017}}
 #  # 默认的Redis服务器 存储公共信息
 #  redis:
 #    database: ${ENV_REDIS_DB:${REDIS_DB:0}}
-#    host: ${ENV_REDIS_HOST:${REDIS_HOST:${sixi-micro-service.local}}}
+#    host: ${ENV_REDIS_HOST:${REDIS_HOST:${itzy-micro-service.local}}}
 #    port: ${ENV_REDIS_PORT:${REDIS_PORT:6379}}
   # 默认的RabbitMQ服务器
   rabbitmq:
@@ -199,5 +199,5 @@ info:
   app:
     name: ${spring.application.name}
   company:
-    name: sixi
+    name: itzy
 #logging.config: ${ENV_LOGGING_CONFIG:${LOGGING_CONFIG:classpath:logback-rabbitmq-spring.xml}}
