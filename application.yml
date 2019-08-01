@@ -1,9 +1,6 @@
-sixi-micro-services:
+iyzt-micro-services:
   ports:
     # 核心服务
     api-gateway: 8080
-    discovery-service: 8081
-    oauth-service: 8082
-    core-oauth-service: 8082
+    eurceka-service: 8081
     config-service: 8083
-    admin-service: 8084
