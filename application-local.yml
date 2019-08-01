@@ -5,7 +5,6 @@ itzy-micro-service:
     api-gateway: ${itzy-micro-service.local}
     eureka-service: ${itzy-micro-service.local}
     config-service: ${itzy-micro-service.local}
-    hystrix-dashboard: ${itzy-micro-service.local}
 ## MySQL
 #DB_HOST: dev.mysql.i.sixi.com
 #DB_PASS: root
