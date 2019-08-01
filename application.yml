@@ -5,7 +5,7 @@ iyzt-micro-services:
     eurceka-service: 8081
     config-service: 8083
 
-    database:
+#    database:
 
 
 ##############################
@@ -22,7 +22,7 @@ itzy-micro-service:
     api-gateway: 8080
     eureka-service: 8081
     config-service: 8083
-  url: ${SIXI_MICRO_SERVICE_URL:http://${itzy-micro-service.hosts.api-gateway}:${itzy-micro-service.ports.api-gateway}}
+  url: ${ITZY_MICRO_SERVICE_URL:http://${itzy-micro-service.hosts.api-gateway}:${itzy-micro-service.ports.api-gateway}}
 
 # 微服务公共配置
 #sixi-micro-service-security:
@@ -93,7 +93,7 @@ server.port: ${ENV_PORT:${PORT:0}}
 eureka:
   client:
     serviceUrl:
-      defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE:http://${itzy-micro-service.hosts.discovery-service}:${itzy-micro-service.ports.discovery-service}/eureka/}
+      defaultZone: ${EUREKA_CLIENT_SERVICEURL_DEFAULTZONE:http://${itzy-micro-service.hosts.eureka-service}:${itzy-micro-service.ports.eureka-service}/eureka/}
     # 每15秒刷新一次注册中心
     eureka-service-url-poll-interval-seconds: ${EUREKA_SERVICE_URL_POLL_INTERVAL_SECONDS:300}
   instance:
