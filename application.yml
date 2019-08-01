@@ -1,10 +1,10 @@
-iyzt-micro-services:
+itzy-micro-services:
   ports:
     # 核心服务
     api-gateway: 8080
     eurceka-service: 8081
-    hystrix-dashboard: 8082
     config-service: 8083
+    hystrix-dashboard: 8084
 
 #    database:
 
