@@ -6,6 +6,8 @@ itzy-micro-services:
     config-service: 8083
     hystrix-dashboard: 8084
 
+    gateway-service: 8085
+
 #    database:
 
 
