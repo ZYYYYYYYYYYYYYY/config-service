@@ -1,15 +1,14 @@
 itzy-micro-services:
+  # 端口号
   ports:
     # 核心服务
     api-gateway: 8080
     eurceka-service: 8081
     config-service: 8083
     hystrix-dashboard: 8084
-
     gateway-service: 8085
-
-#    database:
-
+    # 数据库
+    database:
 
 ##############################
 # 以下为微服务公用配置 请勿修改
@@ -160,28 +159,28 @@ spring:
       charset: UTF-8
   # 默认的数据库配置
   datasource:
-#    name: ${ENV_DB_NAME:${DB_NAME:sys}}
-#    host: ${ENV_DB_HOST:${DB_HOST:${itzy-micro-service.local}}}
-#    #type: org.apache.tomcat.jdbc.pool.DataSource
-#    driver-class-name: com.mysql.cj.jdbc.Driver
-#    url: ${ENV_DB_URL:${DB_URL:jdbc:mysql://${spring.datasource.host}/${spring.datasource.name}?serverTimezone=Asia%2FShanghai&characterEncoding=utf8&allowMultiQueries=true&useSSL=false}}
-#    second-url: ${ENV_DB_URL:${DB_URL:jdbc:mysql://${spring.datasource.host}/${spring.datasource.second.name}?serverTimezone=Asia%2FShanghai&characterEncoding=utf8&allowMultiQueries=true&useSSL=false}}
-#    username: ${ENV_DB_USER:${DB_USER:root}}
-#    password: ${ENV_DB_PASS:${DB_PASS:root}}
-#    hikari:
-#      minimum-idle: 20
-#      maximum-pool-size: 500
-#  data:
-#    # 默认的Mongodb服务器
-#    mongodb:
-#      database: ${ENV_MONGODB_NAME:${MONGODB_NAME:test}}
-#      host: ${ENV_MONGODB_HOST:${MONGODB_HOST:${itzy-micro-service.local}}}
-#      port: ${ENV_MONGODB_PORT:${MONGODB_PORT:27017}}
-#  # 默认的Redis服务器 存储公共信息
-#  redis:
-#    database: ${ENV_REDIS_DB:${REDIS_DB:0}}
-#    host: ${ENV_REDIS_HOST:${REDIS_HOST:${itzy-micro-service.local}}}
-#    port: ${ENV_REDIS_PORT:${REDIS_PORT:6379}}
+  #    name: ${ENV_DB_NAME:${DB_NAME:sys}}
+  #    host: ${ENV_DB_HOST:${DB_HOST:${itzy-micro-service.local}}}
+  #    #type: org.apache.tomcat.jdbc.pool.DataSource
+  #    driver-class-name: com.mysql.cj.jdbc.Driver
+  #    url: ${ENV_DB_URL:${DB_URL:jdbc:mysql://${spring.datasource.host}/${spring.datasource.name}?serverTimezone=Asia%2FShanghai&characterEncoding=utf8&allowMultiQueries=true&useSSL=false}}
+  #    second-url: ${ENV_DB_URL:${DB_URL:jdbc:mysql://${spring.datasource.host}/${spring.datasource.second.name}?serverTimezone=Asia%2FShanghai&characterEncoding=utf8&allowMultiQueries=true&useSSL=false}}
+  #    username: ${ENV_DB_USER:${DB_USER:root}}
+  #    password: ${ENV_DB_PASS:${DB_PASS:root}}
+  #    hikari:
+  #      minimum-idle: 20
+  #      maximum-pool-size: 500
+  #  data:
+  #    # 默认的Mongodb服务器
+  #    mongodb:
+  #      database: ${ENV_MONGODB_NAME:${MONGODB_NAME:test}}
+  #      host: ${ENV_MONGODB_HOST:${MONGODB_HOST:${itzy-micro-service.local}}}
+  #      port: ${ENV_MONGODB_PORT:${MONGODB_PORT:27017}}
+  #  # 默认的Redis服务器 存储公共信息
+  #  redis:
+  #    database: ${ENV_REDIS_DB:${REDIS_DB:0}}
+  #    host: ${ENV_REDIS_HOST:${REDIS_HOST:${itzy-micro-service.local}}}
+  #    port: ${ENV_REDIS_PORT:${REDIS_PORT:6379}}
   # 默认的RabbitMQ服务器
   rabbitmq:
     host: ${ENV_RABBITMQ_HOST:${RABBITMQ_HOST:${itzy-micro-service.local}}}
