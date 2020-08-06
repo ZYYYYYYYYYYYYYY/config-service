@@ -9,6 +9,7 @@ itzy-micro-services:
     gateway-service: 8085
     #路由服务
     core-route-service: 8101
+    gateway-market-service: 8102
   # 数据库
   database:
     core-route-service: core_route
