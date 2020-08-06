@@ -205,4 +205,4 @@ info:
     name: ${spring.application.name}
   company:
     name: itzy
-logging.config: ${ENV_LOGGING_CONFIG:${LOGGING_CONFIG:classpath:logback-rabbitmq-spring.xml}}
+#logging.config: ${ENV_LOGGING_CONFIG:${LOGGING_CONFIG:classpath:logback-rabbitmq-spring.xml}}
