@@ -6,11 +6,11 @@ itzy-micro-service:
     eureka-service: ${itzy-micro-service.local}
     config-service: ${itzy-micro-service.local}
 ## MySQL
-#DB_HOST: dev.mysql.i.sixi.com
-#DB_PASS: root
+DB_HOST: ${itzy-micro-service.local}
+DB_PASS: root
 ## Redis
-#REDIS_HOST: dev.redis.i.sixi.com
-#REDIS_DB: 10
+REDIS_HOST: ${itzy-micro-service.local}
+REDIS_DB: 2
 #RabbitMQ
 RABBITMQ_HOST: ${itzy-micro-service.local}
 # MongoDB

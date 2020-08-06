@@ -7,8 +7,11 @@ itzy-micro-services:
     config-service: 8083
     hystrix-dashboard: 8084
     gateway-service: 8085
-    # 数据库
-    database:
+    #路由服务
+    core-route-service: 8101
+  # 数据库
+  database:
+    core-route-service: core_route
 
 ##############################
 # 以下为微服务公用配置 请勿修改

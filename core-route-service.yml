@@ -1,0 +1,2 @@
+server.port: ${sixi-micro-services.ports.core-route-service:0}
+spring.datasource.name: ${sixi-micro-services.database.core-route-service:sys}
