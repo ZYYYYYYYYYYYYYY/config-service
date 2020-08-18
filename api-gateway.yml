@@ -2,14 +2,14 @@ server:
   port: 8080
 
 zuul:
-#  # 添加前缀
-#  prefix: /itzy
-#  # 掩藏真实工程名
-#  ignored-services: "*"
-#  # 路由对应路径,默认就是工程名
-#  routes:
-#    mydept.serviceId: microservicecloud-dept
-#    mydept.path: /mydept/**
+  # 添加前缀
+  prefix: /itzy
+  # 掩藏真实工程名
+  ignored-services: "*"
+  # 路由对应路径,默认就是工程名
+  routes:
+    mydept.serviceId: microservicecloud-dept
+    mydept.path: /mydept/**
 
   # 添加代理的相关头信息
   add-proxy-headers: true
