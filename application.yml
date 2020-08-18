@@ -7,6 +7,7 @@ itzy-micro-services:
     config-service: 8083
     hystrix-dashboard: 8084
     gateway-service: 8085
+    base-es-service: 8086
     #路由服务
     core-route-service: 8101
     gateway-market-service: 8102
