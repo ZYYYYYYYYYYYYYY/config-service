@@ -11,6 +11,9 @@ itzy-micro-services:
     #路由服务
     core-route-service: 8101
     gateway-market-service: 8102
+
+    #demo
+    springcloud-demo: 9001
   # 数据库
   database:
     core-route-service: core_route
