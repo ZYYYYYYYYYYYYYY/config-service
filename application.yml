@@ -67,34 +67,34 @@ itzy-micro-service:
 #    callbackUri: ${ENV_itzy_MICRO_SERVICE_THIRD_ALIPAY_CALLBACK_URL:${itzy_MICRO_SERVICE_THIRD_ALIPAY_CALLBACK_URL}}
 #    scop: ${ENV_itzy_MICRO_SERVICE_THIRD_ALIPAY_SCOP:${itzy_MICRO_SERVICE_THIRD_ALIPAY_SCOP}}
 # 微服务公共配置
-#itzy-micro-service-common:
-#  web-mvc-configurer:
-#    enabled: true
-#  redis:
-#    fast-json-serializer: ${itzy_MICRO_SERVICE_COMMON_REDIS_FAST_JSON_SERIALIZER:true}
-#  feign:
-#    debug: ${itzy_MICRO_SERVICE_COMMON_FEIGN_DEBUG:false}
-#    proxy:
-#      enabled: ${itzy_MICRO_SERVICE_COMMON_FEIGN_PROXY_ENABLED:true}
-#      header: ${itzy_MICRO_SERVICE_COMMON_FEIGN_PROXY_HEADER:Cookie,Authorization}
-#  session:
-#    create:
-#      policy: ${itzy_MICRO_SERVICE_COMMON_SESSION_CREATION_POLICY:STATELESS}
-#  message:
-#    no-login: "用户未登录!"
-#    no-permission: "您没有权限访问此接口!"
-#  open:
-#    url: 'https://test.open.itzy.com/api'
-#  tokenmanager:
-#    url: 'https://api.itzy.com/common-tokenmanager-service'
-#  oauth:
-#    url: 'https://test-oauth.cloud.itzy.com'
-#    #旧版oauth
-#    loginPage: '/login.html'
-#    #新版oauth
-#    loginPages: '/logins.html'
-#  logging:
-#    routing-key: ${itzy_MICRO_SERVICE_COMMON_LOGGING_ROUTING_KEY:logs}
+itzy-micro-service-common:
+  web-mvc-configurer:
+    enabled: true
+  redis:
+    fast-json-serializer: ${itzy_MICRO_SERVICE_COMMON_REDIS_FAST_JSON_SERIALIZER:true}
+  feign:
+    debug: ${itzy_MICRO_SERVICE_COMMON_FEIGN_DEBUG:false}
+    proxy:
+      enabled: ${itzy_MICRO_SERVICE_COMMON_FEIGN_PROXY_ENABLED:true}
+      header: ${itzy_MICRO_SERVICE_COMMON_FEIGN_PROXY_HEADER:Cookie,Authorization}
+  session:
+    create:
+      policy: ${itzy_MICRO_SERVICE_COMMON_SESSION_CREATION_POLICY:STATELESS}
+  message:
+    no-login: "用户未登录!"
+    no-permission: "您没有权限访问此接口!"
+  open:
+    url: 'https://test.open.itzy.com/api'
+  tokenmanager:
+    url: 'https://api.itzy.com/common-tokenmanager-service'
+  oauth:
+    url: 'https://test-oauth.cloud.itzy.com'
+    #旧版oauth
+    loginPage: '/login.html'
+    #新版oauth
+    loginPages: '/logins.html'
+  logging:
+    routing-key: ${itzy_MICRO_SERVICE_COMMON_LOGGING_ROUTING_KEY:logs}
 
 # 默认端口配置
 server.port: ${ENV_PORT:${PORT:0}}
