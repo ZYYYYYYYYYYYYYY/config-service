@@ -3,6 +3,10 @@ server.port: ${itzy-micro-services.ports.springcloud-demo:0}
 spring:
   application:
     name: springcloud-demo
+  security: #配置SpringSecurity登录用户名和密码
+    user:
+      name: macro
+      password: 123456
   freemarker:
     #指定HttpServletRequest的属性是否可以覆盖controller的model的同名项
     allow-request-override: true
