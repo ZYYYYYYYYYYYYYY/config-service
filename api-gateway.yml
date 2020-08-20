@@ -2,15 +2,6 @@ server:
   port: 8080
 
 zuul:
-  # 添加前缀
-  prefix: /itzy
-  # 掩藏真实工程名
-  ignored-services: "*"
-  # 路由对应路径,默认就是工程名
-  routes:
-    mydept.serviceId: microservicecloud-dept
-    mydept.path: /mydept/**
-
   # 添加代理的相关头信息
   add-proxy-headers: true
   # 代理时需要过滤的Header头 默认值为: "Cookie", "Set-Cookie", "Authorization"
@@ -19,11 +10,11 @@ zuul:
 # security:
 #   oauth2:
 #     client:
-#       access-token-uri: http://${itzy-micro-service.hosts.api-gateway}:${itzy-micro-service.ports.api-gateway}/auth/oauth/token
-#       user-authorization-uri: http://${itzy-micro-service.hosts.api-gateway}:${itzy-micro-service.ports.api-gateway}/auth/oauth/authorize
+#       access-token-uri: http://${sixi-micro-service.hosts.api-gateway}:${sixi-micro-service.ports.api-gateway}/auth/oauth/token
+#       user-authorization-uri: http://${sixi-micro-service.hosts.api-gateway}:${sixi-micro-service.ports.api-gateway}/auth/oauth/authorize
 #       client-id: client
 #       client-secret: secret
 #     resource:
-#       token-info-uri:  http://${itzy-micro-service.hosts.oauth-service}:${itzy-micro-service.ports.oauth-service}/oauth/check_token
+#       token-info-uri:  http://${sixi-micro-service.hosts.oauth-service}:${sixi-micro-service.ports.oauth-service}/oauth/check_token
 fallback:
   message: '{"status":503, "msg":"服务暂时不可用 请稍候重试!"}'
